@@ -1,0 +1,69 @@
+%% Common template of the research article using elsarticle-ru class.
+%% The elsarticle-ru class is russian translation of the original elsarticle class provided by Elseiver (see http://www.elsevier.com/author-schemas/latex-instructions).
+%% 
+%% Author: Dmitriy O. Afanasyev
+%% Email: dmafanasyev@gmail.com
+%% Web: http://dmafanasyev.ru
+%% Version: 1.0, Feb 04, 2015
+%% 
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+
+% \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+% \usepackage{graphicx} % Required for including pictures
+% \usepackage{wrapfig} % Allows in-line images
+% \usepackage[top=1.25in, bottom=1in, left=1.65in, right=1.65in]{geometry} %%Margins
+% \usepackage{mathpazo} % Use the Palatino font
+% \usepackage[T1]{fontenc} % Required for accented characters
+% \linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+
+\documentclass[3p,11pt,authoryear]{elsarticle-ru}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{epstopdf,cmap,amssymb,amsfonts,amsmath,mathtext,enumerate,float,natbib,indentfirst,hyperref,graphicx,multirow,setspace}
+% \usepackage{pscyr}
+% \usepackage{cmsuper}
+
+\graphicspath{{figures/ru}}
+
+\journal{Название рекомендаций}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% title, authors, affilations
+\input{chapters/ru/Title}
+
+%% abstract
+\begin{abstract}
+\input{chapters/ru/Abstract}
+\end{abstract}
+
+\end{frontmatter}
+
+%% main text
+\input{chapters/1/Paragraph}
+% \input{chapters/2}
+% \input{chapters/3}
+% \input{chapters/3}
+% \input{chapters/4}
+% \input{chapters/5}
+% \input{chapters/6}
+% \input{chapters/7}
+
+% \input{chapters/ru/Results}
+
+% \appendix
+% \input{chapters/ru/Appendix}
+
+\end{document}
